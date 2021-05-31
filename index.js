@@ -10,12 +10,12 @@ quesNumber = 1;
 if (rules === "yes"){
   function play(ques,options,correctAnswer){
  console.log(chalk.cyan("\nQ "+quesNumber +" " + ques));
- for(var i =0; i<=options.length; i++){
+ for(var i =0; i<options.length; i++){
     console.log(`${i + 1}. ${options[i]}`);   
  }
  var userAnswer = readlineSync.question(chalk.red("Enter a valid choice "));
  if(userAnswer === correctAnswer){
-   score ++;
+   score++;
  }
   quesNumber++;
   }
