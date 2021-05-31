@@ -14,8 +14,9 @@ if (rules === "yes"){
     console.log(`${i + 1}. ${options[i]}`);   
  }
  var userAnswer = readlineSync.question(chalk.red("Enter a valid choice "));
- if(userAnswer === correctAnswer){
-   score++;
+  if (userAnswer == correctAnswer) {
+
+        score++;
  }
   quesNumber++;
   }
@@ -30,7 +31,6 @@ if (rules === "yes"){
   play(" For a cricketer initials LBW stands for",["Loss By Weather","List Ball Win","Leg Before Wicket","Loss By Wicket"],3);
   play(" The first ever test match was held in...",["1877","1887","1897","1867"],1);
 console.log(chalk.magenta("Your score is:" + score));
-
 if(score>=6){
   console.log(chalk.bgBlueBright("You know about cricket very well")); 
 }
